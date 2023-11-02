@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}body{
+    height: 100vh;
+    width: 100wh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: 3s ease-in-out;
+    animation-duration: 2s;
+
+}
+.gohst{
+    height: 145px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 70px 70px 0 0;
+    animation: floating 2s infinite ease-in-out;
+
+}
+
+@keyframes floating{
+50%{
+    transform: translatey(30px);
+}
+
+}
+.face{
+    /* background-color: aqua; */
+    width: 100px;
+    height: 100px;
+    margin-top:45px;
+    display: flex;
+    flex-direction: column;
+justify-content: space-around;
+}
+#eye{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#eye span{
+    /* align-items: center; */
+    /* display: block; */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(97, 13, 29);
+    transform: 2s linear;
+}
+#mouse{
+    width: 40px;
+    height: 20px;
+    background-color:#000;
+    border-radius: 3px 3px 20px 20px;
+    margin: 0 30px 10px;
+}
+.hand{
+    /* display: flex; */
+    /* justify-content:space-between ; */
+    height: 20px;
+    width: 140px;
+    background-color: #fff;
+    margin-top: -15px;
+    margin-left: -19px;
+    border-radius: 50px;
+    transform: 2s linear;
+ }
+ .foots{
+    display: flex;
+    justify-content:space-between;
+ }
+
+ .foots span{
+    display: inline-block;
+width: 18px;
+height: 30px;
+border-radius: 0 0 20px 20px;
+background-color: #fff;
+transform: 2s linear;
+ }
+ .gohst:hover #eye span{
+  background-color: rgb(210, 31, 129);
+height: 5px;
+ }
+ .gohst:hover .foots span{
+    background-color: rgb(210, 31, 129);
+    height: 15px;
+   }
+   .gohst:hover #mouse{
+    background-color:rgb(210, 31, 129);
+   height: 6px;
+   }
